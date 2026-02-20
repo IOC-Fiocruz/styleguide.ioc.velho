@@ -27,7 +27,7 @@ async function initStyleGuide() {
         // 2. PALETA DE CORES (Lendo data.colors.values)
         const colorContainer = document.getElementById('colors-container');
         colorContainer.innerHTML = ''; 
-        data.colors.values.sort((a, b) => b.count - a.count).slice(0, 4).forEach(colorObj => {
+        data.colors.values.sort((a, b) => b.count - a.count).slice(0, 12).forEach(colorObj => {
             colorContainer.innerHTML += `
                 <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition hover:scale-105">
                     <div class="swatch" style="background-color: ${colorObj.raw}; height: 60px;"></div>
