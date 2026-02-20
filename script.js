@@ -1,6 +1,6 @@
 async function initStyleGuide() {
     try {
-        const response = await fetch('data.json');
+        const response = await fetch('./data.json');
         const data = await response.json();
 
         // 1. DASHBOARD DE ESTATÍSTICAS
